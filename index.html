@@ -4,55 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="design.css"/>
+    <link rel="stylesheet" href="./css/design.css"/>
     <title>Proyecto 1</title>
 </head>
 <body>
     <script type="text/javascript">
         function showAnAlert() {
-            alert('Insert user name')
+            alert(prompt("Usuario:", "Tu Usuario") && prompt("Contraseña", "12345"));
+            if (prompt === null) {
+                return "Volvé a ingresar";
+            }
+        
         }
     </script>
     <nav>
            <button>Menú</button>
            <button><a href="sobre-nosotros.html">Sobre nosotros</a></button>
-           <button onclick="showAnAlert()">Log in</button>
+           <button onclick="showAnAlert()">Iniciar Sesión</button>
+           <button>Registrarse</button>
            <button>Ayuda</button>
     </nav>
-    <header><h1>Tofu empanado</h1></header>
-    <section id ="Ingredientes">
-        <h3>Ingredientes (12 porciones aprox.)</h3>
-        <ul>
-            <li>Un bloque de tofu</li>
-            <li>Agua c/n</li><i class="fa-regular fa-glass-water"></i>
-            <li>2 o 3 cucharadas de soja</li> 
-            <li>1 cdita de vinagre de manzana</li> 
-            <li>1 cuchara de azúcar</li> 
-            <li>Harina</li> 
-            <li>Pan rallado</li> 
-            <li>Condimentos (orégano, cúrcuma, sal)</li> 
-        </ul>
-    </section> 
+    <header><h1>Tofu rebozado</h1></header>
+    <section>
+        <article id="Ingredientes">
+            <h3>Ingredientes (12 porciones aprox.)</h3>
+            <ul>
+                <li>Un bloque de tofu</li>
+                <li>Agua c/n</li><i class="fa-regular fa-glass-water"></i>
+                <li>2 o 3 cucharadas de soja</li> 
+                <li>1 cdita de vinagre de manzana</li> 
+                <li>1 cuchara de azúcar</li> 
+                <li>Harina</li> 
+                <li>Pan rallado</li> 
+                <li>Condimentos (orégano, cúrcuma, sal)</li> 
+            </ul>
+        </article>
     <hr>
-    <section id="Procedimiento">
-        <h3>Procedimiento</h3>
-        <ol>
-            <li>Secar el tofu con una servilleta de papel</li>
-            <li>Cortar en láminas o cubos el tofu</li>
-            <li>Marinar durante por lo menos 15 min. en agua (hasta tapar las láminas o cubos), salsa de soja, vinagre de manzana y azúcar</li>
-            <li>Hacer una mezcla de igual cantidad de harina y agua. Agregar un cdita de cúrcuma y una pizca de sal. Pasar el tofu por la mezcla</li>
-            <li>Luego pasar el tofu por el pan rallado (condimentado con orégano, ajo y perejil, etc)</li>
-            <li>Freir con muy poquito aceite en sartén</li>
-        </ol>
+        <article id="Procedimiento">
+            <h3>Procedimiento</h3>
+            <ol>
+                <li>Secar el tofu con una servilleta de papel</li>
+                <li>Cortar en láminas o cubos el tofu</li>
+                <li>Marinar durante por lo menos 15 min. en agua (hasta tapar las láminas o cubos), salsa de soja, vinagre de manzana y azúcar</li>
+                <li>Hacer una mezcla de igual cantidad de harina y agua. Agregar un cdita de cúrcuma y una pizca de sal. Pasar el tofu por la mezcla</li>
+                <li>Luego pasar el tofu por el pan rallado (condimentado con orégano, ajo y perejil, etc)</li>
+                <li>Freir con muy poquito aceite en sartén</li>
+            </ol>
+        </article>
+        <figure>
+            <img src="img\tofu-rebozado.jpg" alt="tofu rebozado">
+            <figcaption>Resultado final</figcaption>
+        </figure>
     </section>
-
+    <section>
     <h3>Tips</h3>
-    <ul>
-        <li>Puede quedar rico con barbacoa</li> 
-        <li>Se puede comer en sandwich</li> 
-        <li>Se puede comer tipo "napolitana" con salsa de tomate y queso</li> 
-        <li>También de condimentos se podría usar el Finas Hierbas de Alicante</li> 
-        <li>En vez de harina y agua, se puede usar agua y semillas de chía/lino molidas</li> 
-    </ul>
+        <ul>
+            <li>Puede quedar rico con barbacoa</li> 
+            <li>Se puede comer en sandwich</li> 
+            <li>Se puede comer tipo "napolitana" con salsa de tomate y queso</li> 
+            <li>También de condimentos se podría usar el Finas Hierbas de Alicante</li> 
+            <li>En vez de harina y agua, se puede usar agua y semillas de chía/lino molidas</li> 
+        </ul>
+    </section>
 </body>
+<footer>© 2022 Copyright</footer>
 </html>
