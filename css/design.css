@@ -3,39 +3,43 @@ body {
     color: black;
 }
 
-.Ingredientes ul {
-    text-align: left;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-}
-
 h1 {
     text-align: center;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-h3 {
-    text-align: left;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+.BarraNav ul {
+    display: flex 
 }
 
 button {
     background-color: lavender;
 }
 
-ul {
+.Ingredientes ul {
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.Ingredientes h3 {
+    text-align: left;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.Ingredientes ul {
     list-style-type: square;
 }
 
-ul.interlineado {
+.Ingredientes ul.interlineado {
     line-height: 1.5;
 }
 
-ol {
+.Procedimiento ol {
     list-style-type: decimal;
 }
 
-ol.interlineado {
+.Procedimiento ol.interlineado {
     line-height: 1.5;
 }
 
