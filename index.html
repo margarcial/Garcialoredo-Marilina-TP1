@@ -9,20 +9,30 @@
 </head>
 <body>
     <script type="text/javascript">
-        function showAnAlert() {
-            alert(prompt("Usuario:", "Tu Usuario") && prompt("Contraseña", "12345"));
+        function inicioSesion() {
+            alert(prompt("Usuario:", "Tu Usuario") && prompt("Contraseña", "12345678"));
+        }
+        function registroUsuario() {
+            alert(prompt("Crea aca tu nuevo usuario:", "Tu Usuario") && prompt("Crea una contraseña de 8 caracteres", "12345678"));
         }
     </script>
-    <nav>
-        <ul class="BarraNav">
-           <button>Menú</button>
-           <button><a href="sobre-nosotros.html">Sobre nosotros</a></button>
-           <button onclick="showAnAlert()">Iniciar Sesión</button>
-           <button>Registrarse</button>
-           <button>Ayuda</button>
-        </ul>
-    </nav>
-    <header><h1>Tofu rebozado</h1></header>
+    <header>
+        <nav>
+            <ul class="BarraNav">
+                <li><a href="#menu" class="Menu">Menú</a></li>
+                    <ul class="Submenu">
+                        <li><a href="Subitem1">Recetas dulces</a></li>
+                        <li><a href="Subitem2">Recetas saladas</a></li>
+                        <li><a href="Subitem3">Otros</a></li>
+                    </ul>
+                <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+                <li><a href="./ayuda.html">Ayuda</a></li>
+                <li><button onclick="inicioSesion()">Iniciar Sesión</button></li>
+                <li><button onclick="registroUsuario()">Registrarse</button></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Tofu rebozado</h1>
     <section>
         <article class="Ingredientes">
             <h3>Ingredientes (12 porciones aprox.)</h3>
@@ -38,7 +48,7 @@
             </ul>
             <hr>
         </article>
-        <article id="Procedimiento">
+        <article class="Procedimiento">
             <h3>Procedimiento</h3>
             <ol>
                 <li>Secar el tofu con una servilleta de papel</li>
@@ -57,13 +67,13 @@
     <section>
         <article id="Extra">
             <h3>Tips</h3>
-                <ul>
-                    <li>Puede quedar rico con barbacoa</li> 
-                    <li>Se puede comer en sandwich</li> 
-                    <li>Se puede comer tipo "napolitana" con salsa de tomate y queso</li> 
-                    <li>También de condimentos se podría usar el Finas Hierbas de Alicante</li> 
-                    <li>En vez de harina y agua, se puede usar agua y semillas de chía/lino molidas</li> 
-                </ul>
+            <ul>
+                <li>Puede quedar rico con barbacoa</li> 
+                <li>Se puede comer en sandwich</li> 
+                <li>Se puede comer tipo "napolitana" con salsa de tomate y queso</li> 
+                <li>También de condimentos se podría usar el Finas Hierbas de Alicante</li> 
+                <li>En vez de harina y agua, se puede usar agua y semillas de chía/lino molidas</li> 
+            </ul>
         </article>
     </section>
 </body>
